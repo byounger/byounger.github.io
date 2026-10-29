@@ -42,10 +42,10 @@ tailwind.config = {
     <a href="#home" class="font-semibold tracking-tight">Brittney Younger Gassen</a>
     <ul class="hidden items-center gap-1 text-sm md:flex">
       <li><a class="rounded-md px-3 py-1.5 hover:bg-canvas" href="#home">Home</a></li>
-      <li><a class="rounded-md px-3 py-1.5 hover:bg-canvas" href="about.html">About</a></li>
+      <li><a class="rounded-md px-3 py-1.5 hover:bg-canvas" href="#about">About</a></li>
       <li><a class="rounded-md px-3 py-1.5 hover:bg-canvas" href="#work">Work</a></li>
+      <li><a class="rounded-md px-3 py-1.5 hover:bg-canvas" href="#services">Services</a></li>
       <li><a class="rounded-md px-3 py-1.5 hover:bg-canvas" href="https://byounger.github.io/BYvizp/Projects/" target="_blank" rel="noopener">Archive</a></li>
-      <li><a class="rounded-md px-3 py-1.5 hover:bg-canvas" href="services.html">Services</a></li>
       <li><a class="ml-2 rounded-md bg-ink px-3 py-1.5 text-white hover:bg-black/80" href="#contact">Contact</a></li>
     </ul>
     <button id="menuBtn" class="rounded-md border border-line px-3 py-1.5 text-sm md:hidden" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
@@ -53,10 +53,10 @@ tailwind.config = {
   <div id="mobileMenu" class="hidden border-t border-line bg-white md:hidden">
     <ul class="mx-auto max-w-5xl px-5 py-2 text-sm">
       <li><a class="block py-2.5" href="#home">Home</a></li>
-      <li><a class="block py-2.5" href="about.html">About</a></li>
+      <li><a class="block py-2.5" href="#about">About</a></li>
       <li><a class="block py-2.5" href="#work">Work</a></li>
+      <li><a class="block py-2.5" href="#services">Services</a></li>
       <li><a class="block py-2.5" href="https://byounger.github.io/BYvizp/Projects/" target="_blank" rel="noopener">Archive (2014–2015 Data Roots)</a></li>
-      <li><a class="block py-2.5" href="services.html">Services</a></li>
       <li><a class="block py-2.5 font-medium" href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -90,13 +90,18 @@ tailwind.config = {
 </div>
 </section>
 
-<!-- Career arc -->
-<section id="journey" class="border-y border-line bg-white">
+<!-- About / Career Arc Section -->
+<section id="about" class="border-y border-line bg-white">
   <div class="mx-auto max-w-5xl px-5 py-16">
-    <h2 class="text-2xl font-semibold tracking-tight">Career Arc</h2>
-    <p class="mt-2 max-w-xl text-mute">My experience and background break down into four key phases, each building on the last. Select a phase to see my career evolution.</p>
+    <div class="max-w-2xl">
+      <p class="font-mono text-xs text-azure-deep">Background &amp; Evolution</p>
+      <h2 class="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">About &amp; Career Arc</h2>
+      <p class="mt-3 text-mute leading-relaxed">
+        I bridge the gap between technical complexity and business velocity. My delivery background is built on a four-phase journey—starting with hands-on code and data models, scaling through enterprise client success, and maturing into complex program orchestration and venture leadership.
+      </p>
+    </div>
 
-    <div class="mt-8 grid gap-3 sm:grid-cols-4" role="tablist" aria-label="Career progression">
+    <div class="mt-10 grid gap-3 sm:grid-cols-4" role="tablist" aria-label="Career progression">
       <button class="step rounded-lg border border-line bg-white p-4 text-left transition-colors hover:bg-canvas" role="tab" id="t0" style="--c:#2F6FED" aria-controls="p0" aria-selected="true">
         <span class="step-meta block font-mono text-xs text-mute">Phase 1</span>
         <span class="mt-1 block font-medium">Data and visual analytics foundations</span>
@@ -145,145 +150,4 @@ tailwind.config = {
 <!-- Featured flagship work -->
 <section id="work" class="mx-auto max-w-5xl px-5 py-16">
   <p class="font-mono text-xs text-azure-deep">Featured work</p>
-  <h2 class="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">Featured Workflow Architecture &amp; Delivery Orchestration</h2>
-  <p class="mt-2 max-w-2xl text-mute">Translating ambiguous product vision into deterministic, engineering-ready mobile workflows.</p>
-
-  <div id="architecture" class="mt-8 rounded-lg border border-azure/30 border-t-4 border-t-azure bg-azure-soft p-6">
-    <h3 class="text-lg font-semibold">Ramble: Mobile MVP User Workflows &amp; State Machine Architecture</h3>
-    <p class="mt-2 max-w-3xl text-sm leading-relaxed text-azure-deep">Facilitates secure offline meetups for digital nomads through encrypted exchanges and trust updates, supporting decentralized identity verification.</p>
-    <dl class="mt-5 grid gap-5 md:grid-cols-3">
-      <div>
-        <dt class="font-mono text-xs text-azure-deep">Role</dt>
-        <dd class="mt-1 text-sm">Product Architect &amp; Strategic Delivery Lead</dd>
-      </div>
-      <div>
-        <dt class="font-mono text-xs text-azure-deep">Focus</dt>
-        <dd class="mt-1 text-sm">User journey orchestration, decision trees, exception handling, and mobile state machines.</dd>
-      </div>
-      <div>
-        <dt class="font-mono text-xs text-azure-deep">Strategic framing</dt>
-        <dd class="mt-1 text-sm">How this visual blueprint eliminated technical ambiguity between product strategy and engineering execution.</dd>
-      </div>
-    </dl>
-  </div>
-
-  <figure class="mt-5 overflow-hidden rounded-xl border border-line bg-white">
-    <div class="flex items-center justify-between gap-3 border-b border-line px-4 py-2.5">
-      <div class="flex items-center gap-1.5" aria-hidden="true">
-        <span class="h-2.5 w-2.5 rounded-full bg-cobalt"></span><span class="h-2.5 w-2.5 rounded-full bg-lagoon"></span><span class="h-2.5 w-2.5 rounded-full bg-azure"></span>
-        <span class="ml-3 hidden font-mono text-xs text-mute sm:inline">figma / ramble-mvp-user-workflows</span>
-      </div>
-      <a href="https://ethics-shock-90133812.figma.site/" target="_blank" rel="noopener" class="font-mono text-xs text-azure-deep underline underline-offset-4">Open canvas in Figma ↗</a>
-    </div>
-    <div class="relative aspect-[16/10] w-full bg-canvas">
-      <div id="canvasPreview" class="absolute inset-0 flex flex-col items-center justify-center gap-5 p-6 text-center">
-        <div class="flex flex-wrap items-center justify-center gap-2" aria-label="Simplified workflow schematic">
-          <span class="rounded-md border border-azure/30 bg-azure-soft px-2.5 py-1.5 font-mono text-xs text-azure-deep">Onboarding</span> <span class="font-mono text-xs text-mute" aria-hidden="true">→</span> <span class="rounded-md border border-lagoon/30 bg-lagoon-soft px-2.5 py-1.5 font-mono text-xs text-lagoon-deep">Identity verification</span> <span class="font-mono text-xs text-mute" aria-hidden="true">→</span> <span class="rounded-md border border-cobalt/30 bg-cobalt-soft px-2.5 py-1.5 font-mono text-xs text-cobalt-deep">Meetup</span> <span class="font-mono text-xs text-mute" aria-hidden="true">→</span> <span class="rounded-md border border-iris/30 bg-iris-soft px-2.5 py-1.5 font-mono text-xs text-iris-deep">Encrypted exchange</span> <span class="font-mono text-xs text-mute" aria-hidden="true">→</span> <span class="rounded-md border border-azure/30 bg-azure-soft px-2.5 py-1.5 font-mono text-xs text-azure-deep">Trust update</span>
-        </div>
-        <p class="max-w-md text-sm text-mute">Simplified schematic. The full state machine, with decision gates and exception paths, lives on the canvas.</p>
-        <div class="flex flex-wrap justify-center gap-3">
-          <a href="https://ethics-shock-90133812.figma.site/" target="_blank" rel="noopener" class="rounded-lg bg-azure px-4 py-2 text-sm font-medium text-white hover:bg-azure-deep">Open canvas in Figma ↗</a>
-          <button id="loadCanvas" class="rounded-lg border border-line bg-white px-4 py-2 text-sm font-medium hover:bg-canvas">Try inline embed</button>
-        </div>
-      </div>
-      <iframe id="canvasFrame" title="Ramble MVP user workflows, Figma canvas" class="absolute inset-0 hidden h-full w-full" allowfullscreen
-        data-src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FrXolOEbRL9iSR35vHQxavL%2FRamble---MVP-User-Workflows"></iframe>
-    </div>
-  </figure>
-
-  <dl class="mt-5 grid gap-3 md:grid-cols-3">
-    <div class="rounded-lg border border-line bg-white p-4">
-      <dt class="font-mono text-xs text-lagoon-deep">Scope</dt>
-      <dd class="mt-1.5 text-sm font-medium">End-to-end onboarding and core loop</dd>
-    </div>
-    <div class="rounded-lg border border-line bg-white p-4">
-      <dt class="font-mono text-xs text-cobalt-deep">Method</dt>
-      <dd class="mt-1.5 text-sm font-medium">State transitions and decision gates</dd>
-    </div>
-    <div class="rounded-lg border border-line bg-white p-4">
-      <dt class="font-mono text-xs text-iris-deep">Delivery outcome</dt>
-      <dd class="mt-1.5 text-sm font-medium">Zero-ambiguity engineering spec</dd>
-    </div>
-  </dl>
-</section>
-
-<!-- Data roots teaser -->
-<section class="mx-auto max-w-5xl px-5 pb-16">
-  <a href="https://byounger.github.io/BYvizp/Projects/" target="_blank" rel="noopener" class="group flex gap-4 rounded-lg border border-line bg-white p-5 transition-colors hover:border-iris/50">
-    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-iris-soft font-mono text-sm font-medium text-iris-deep" aria-hidden="true">D3</span>
-    <span>
-      <span class="block font-mono text-xs text-mute">Archive · 2014–2015 data roots</span>
-      <span class="mt-1 block leading-relaxed"><strong class="font-semibold">Rooted in code:</strong> Explore the 2014–2015 interactive D3.js visualization archive that shaped my analytical approach to modern systems delivery.</span>
-      <span class="mt-2 block text-sm font-medium text-iris-deep underline underline-offset-4 group-hover:text-iris">Open the archive</span>
-    </span>
-  </a>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="mx-auto max-w-5xl px-5 pb-16">
-  <div class="overflow-hidden rounded-lg bg-ink p-8 text-white">
-    <div class="-mx-8 -mt-8 mb-8 flex h-1.5" aria-hidden="true"><span class="flex-1 bg-azure"></span><span class="flex-1 bg-lagoon"></span><span class="flex-1 bg-cobalt"></span><span class="flex-1 bg-iris"></span></div>
-    <h2 class="text-2xl font-semibold tracking-tight">Let's talk about your program</h2>
-    <p class="mt-2 max-w-xl text-white/70">If you are planning or recovering a complex digital, data, or AI engagement, I would like to hear about it.</p>
-    <a href="mailto:brittney.younger@gmail.com" class="mt-5 inline-block rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-ink hover:bg-azure-soft">Get in touch</a>
-  </div>
-</section>
-
-</main>
-
-<!-- Footer -->
-<footer class="border-t border-line bg-white">
-  <div class="mx-auto flex max-w-5xl flex-col gap-4 px-5 py-8 text-sm sm:flex-row sm:items-center sm:justify-between">
-    <nav aria-label="Breadcrumb" class="font-mono text-xs text-mute">
-      <a class="hover:text-ink" href="https://github.com/byounger">byounger.github.io</a> / <span class="text-ink">index</span>
-    </nav>
-    <ul class="flex gap-5">
-      <li><a class="hover:underline" href="https://www.linkedin.com/in/brittney-younger-gassen-ssm-pmp-1baa4a1a" rel="noopener" target="_blank">LinkedIn</a></li>
-      <li><a class="hover:underline" href="https://github.com/byounger" rel="noopener" target="_blank">GitHub</a></li>
-      <li><a class="hover:underline" href="mailto:brittney.younger@gmail.com">Email</a></li>
-    </ul>
-    <p class="text-xs text-mute">© <span id="year"></span> Brittney Younger Gassen</p>
-  </div>
-</footer>
-
-<script>
-  const menuBtn = document.getElementById('menuBtn'), menu = document.getElementById('mobileMenu');
-  menuBtn.addEventListener('click', () => {
-    const open = menu.classList.toggle('hidden') === false;
-    menuBtn.setAttribute('aria-expanded', open);
-  });
-  menu.addEventListener('click', e => { if (e.target.tagName === 'A') { menu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', false); } });
-
-  const tabs = [...document.querySelectorAll('[role="tab"]')], rail = document.getElementById('rail');
-  const hues = [['#2F6FED','#E8F0FE'],['#0E9AA7','#E0F5F7'],['#4F46E5','#E8E8FD'],['#8456E8','#F0EAFD']];
-  function select(i) {
-    tabs.forEach((t, n) => {
-      const on = n === i;
-      t.setAttribute('aria-selected', on);
-      t.tabIndex = on ? 0 : -1;
-      document.getElementById('p' + n).hidden = !on;
-    });
-    rail.style.width = ((i + 1) / tabs.length * 100) + '%';
-    rail.style.background = hues[i][0];
-    document.getElementById('panelWrap').style.background = hues[i][1];
-  }
-  select(0);
-  tabs.forEach((t, i) => {
-    t.addEventListener('click', () => select(i));
-    t.addEventListener('keydown', e => {
-      let n = null;
-      if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
-      if (e.key === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
-      if (n !== null) { select(n); tabs[n].focus(); }
-    });
-  });
-
-  const cf = document.getElementById('canvasFrame'), cp = document.getElementById('canvasPreview');
-  document.getElementById('loadCanvas').addEventListener('click', () => {
-    cf.src = cf.dataset.src; cf.classList.remove('hidden'); cp.classList.add('hidden');
-  });
-
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
+  <h2 class="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
